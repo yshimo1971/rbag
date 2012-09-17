@@ -1,0 +1,5 @@
+default CentOS_6.2_Final
+ 
+label CentOS_6.2_Final
+kernel vmlinuz
+append ks=http://192.168.0.81/ks.cfg load initrd=initrd.img devfs=nomount

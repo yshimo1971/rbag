@@ -1,0 +1,6 @@
+default CentOS_6.3_Final
+ 
+label CentOS_6.3_Final
+kernel vmlinuz
+append ks=http://<%= node['ipaddress'] %>/<%= @filename %>.cfg load initrd=initrd.img devfs=nomount
+

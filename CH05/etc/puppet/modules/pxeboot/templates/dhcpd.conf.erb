@@ -1,0 +1,21 @@
+#
+# DHCP Server Configuration file.
+#   see /usr/share/doc/dhcp*/dhcpd.conf.sample
+#   see 'man 5 dhcpd.conf'
+#
+
+default-lease-time 600;
+max-lease-time 7200;
+ddns-update-style ad-hoc;
+log-facility local7;
+
+subnet <%= @network_eth0 %> netmask <%= @netmask_eth0 %> {
+    range <%= @network_eth0.gsub!(/\d+$/, "31") %> <%= @network_eth0.gsub!(/\d+$/, "50") %>;
+    option subnet-mask <%= @netmask_eth0 %>;
+    option routers <%= @gateway %>;
+    option domain-name "<%= @domain_name %>";
+    option domain-name-servers <%= @name_server %>;
+    option netbios-name-servers <%= @wins_server or @name_server %>;
+    filename "/linux-install/pxelinux.0";
+    next-server <%= @ipaddress %>;
+}

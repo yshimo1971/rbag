@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+	<title>Run Book Automation 実践ガイド- ソースコード</title>
+</head>
+
+<body>
+<h1>Run Book Automation 実践ガイド- ソースコード</h1>
+各章ごとに掲載しているソースをまとめてありますので参考にしてください。
+
+<h2>Chapter 1 Run Book Automationとシステム管理</h2>
+<blockquote>
+Chapter 1には本書独自に作成したファイルなどはありません。
+</blockquote>
+
+<h2>Chapter 2 管理シートからのパラメータ抽出</h2>
+<ul>
+	<li><a href="./CH02/ie.rb">リスト2.1 プログラム例</a></li>
+	<li><a href="./CH02/sample1.xls">図2.1 サンプル用Excelファイル</a></li>
+	<li><a href="./CH02/excel001.rb">リスト2.2 プログラム例</a></li>
+	<li><a href="./CH02/excel002.rb">リスト2.3 プログラム例</a></li>
+	<li><a href="./CH02/urllist.xls">図2.2 実行前</a></li>
+	<li><a href="./CH02/urllist-done.xls">図2.3 実行後</a></li>
+	<li><a href="./CH02/excel002.ps1">リスト2.4 プログラム例</a></li>
+	<li><a href="./CH02/row001.rb">リスト2.5 Ruby</a></li>
+	<li><a href="./CH02/row001.ps1">リスト2.6 PowerShell</a></li>
+	<li><a href="./CH02/row002.rb">リスト2.7 Ruby</a></li>
+	<li><a href="./CH02/row002.ps1">リスト2.8 PowerShell</a></li>
+</ul>
+
+<h2>Chapter 3 Kickstartによるインストール自動化</h2>
+<ul>
+	<li><a href="./CH03/default.txt">リスト3.2 プログラム例</a></li>
+	<li><a href="./CH03/dhcpd.conf">リスト3.3 dhcpd.confの例</a></li>
+	<li><a href="./CH03/anaconda-ks.cfg">リスト3.4 インストール時のKickstartファイル例</a></li>
+	<li><a href="./CH03/ks.cfg">リスト3.5 テスト環境用のKickstartファイル</a></li>
+	<li><a href="./CH03/centos.xls">図3.4 Excelシート</a></li>
+	<li><a href="./CH03/centos.rb">リスト3.6 プログラム例</a></li>
+	<li><a href="./CH03/default.erb">リスト3.7 PXEブート設定ファイルのテンプレート</a></li>
+	<li><a href="./CH03/kickstart.cfg.erb">リスト3.8 Kickstartファイルのテンプレート</a></li>
+</ul>
+
+<h2>Chapter 4 仮想環境の自動サーバ構築</h2>
+<ul>
+	<li><a href="./CH04/new-vm.xls">図4.2 Excelシート</a></li>
+	<li><a href="./CH04/new-vm.ps1">リスト4.1 new-vm.ps1</a></li>
+	<li><a href="./CH04/get-lists.ps1">リスト4.2 get-lists.ps1</a></li>
+	<li><a href="./CH04/vmlist-20120718-120047.xls">図4.4 実行例(get-lists.ps1)</a></li>
+	<li><a href="./CH04/template-vm.ps1">リスト4.3 template-vm.ps1</a></li>
+	<li><a href="./CH04/template-vm.xls">図4.5 Excelファイル</a></li>
+</ul>
+
+<h2>Chapter 5 Puppetによるシステム管理 </h2>
+<blockquote>
+Chapter 5のファイルは個別にリスト化していません。ディレクトリ以下を<a href="./CH05">参照</a>してください。
+</blockquote>
+
+<h2>Chapter 6 Chefによるシステム管理 </h2>
+<blockquote>
+Chapter 6のファイルは個別にリスト化していません。ディレクトリ以下を<a href="./CH06">参照</a>してください。
+</blockquote>
+
+<h2>Chapter 7 バックアップ自動化</h2>
+<ul>
+	<li><a href="./CH07/amanda.conf">リスト7.2 amanda.confの設定例(DailySet)</a></li>
+</ul>
+
+<h2>Chapter 8 構成管理／変更管理の自動化 </h2>
+<blockquote>
+Chapter 8には本書独自に作成したファイルなどはありません。
+</blockquote>
+
+<h2>Chapter 9 ネットワーク管理のスクリプティング</h2>
+<ul>
+	<li><a href="./CH09/telnet-sample.rb">リスト9.1 Rubyでtelnetを実行するサンプル</a></li>
+	<li><a href="./CH09/hosts.rb">リスト9.2 ホストアクセスのためのクラス(hosts.rb)</a></li>
+<!--	<ul><ol>本文P.214の3行目<br>
+	(誤) 7:    if options.kind_of?(Hash) and options["Name"]</br>
+	(正) 7:    if options.kind_of?(Hash) and !options["Name"]</br>
+	</ol></il> -->
+	<li><a href="./CH09/hostinfo.xls">リスト9.1 ホストをまとめたExcelシート(hostsinfoシート)</a></li>
+	<li><a href="./CH09/hostinfo.rb">リスト9.3 Excelシートの一覧からホストを参照するプログラム</a></li>
+	<li><a href="./CH09/hostinfo.xls">リスト9.2 プログラム実行結果(resultシート)</a></li>
+</ul>
+
+
+<h2>Chapter 10 システム稼動レポート自動作成</h2>
+<ul>
+	<li><a href="./CH10/edogawa.rb">リスト10.1 温度グラフ作成サンプルデモ</a></li>
+	<li><a href="./CH10/edogawa.csv">リスト10.1 温度グラフ作成サンプルデータ(本文にはありません)</a></li>
+	<li><a href="./CH10/cacti.rb">リスト10.5 cacti.rb</a></li>
+	<li><a href="./CH10/cacti.rb">リスト10.6 グラフを取得するプログラム</a></li>
+	<li><a href="./CH10/report1.rb">リスト10.7 report1.rb</a></li>
+	<li><a href="./CH10/report1.tlf">図10.33 ThinReports Editorで作成したレイアウト</a></li>
+	<li><a href="./CH10/report.rb">リスト10.8 report.rb</a></li>
+	<li><a href="./CH10/report.tlf">図10.35 ThinReports Editorで作成したレイアウト</a></li>
+</ul>
+
+</body>
+</html>
